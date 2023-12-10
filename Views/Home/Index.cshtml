@@ -1,0 +1,71 @@
+﻿@model List<Tb1Kbi>
+@{ int summation = 0;}
+@section StyleHome{
+    <link rel="stylesheet" href="Css/style.css">
+}
+
+    <!--Header-->
+    <div class="header1">
+        Survey System
+    </div>
+
+    <!--Main Body-->
+    <div class="gr1">
+        <div class="head">
+            Key Performance Indicator
+        </div>
+        <hr class="line1">
+        <div class="head2">
+            <h3>Department Num</h3>
+            <input type="text">
+        </div>
+        <div class="AddNew">
+            <h3 class="add">+</h3>
+            <a href="#"> <h3 class="link1">Add New Row</h3> </a>
+        </div>
+
+        <!--Grid-->
+        <div class="grid-container">
+            <!--Head-->
+            <div class="grid-item head3">Indicator Number</div>
+            <div class="grid-item head3">Indicator Description</div>
+            <div class="grid-item head3">Measuring Unit (%)</div>
+            <div class="grid-item head3">Action</div>
+            <div class="grid-item head3">Target Value</div>
+            <!--Body-->
+        @foreach(var item in Model)
+        {
+        <div class="grid-item">@item.DepNo </div>
+        <div class="grid-item">@item.Kpidescription</div>
+            <div class="grid-item">
+                % Percentage
+            </div>
+
+            <div class="grid-item"> <a asp-controller="Home" asp-action="Delete" asp-route-id="@item.DepNo" class="bts1">Delete</a> </div>
+        <div class="grid-item">@item.TargetedValue %</div>
+        }
+
+        @{
+            foreach(var item in Model)
+            {
+                summation += item.TargetedValue;
+            }
+            
+        }
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div><h3 class="cal">Total : </h3></div>
+            <div class="calT">
+                <div>@summation %</div>
+            </div>
+        </div>
+
+        <!--Button At the End-->
+        <hr class="line1">
+        <div class="btns">
+            <a asp-controller="Home" asp-action="New"  class="bts1">New</a>
+        </div>
+    </div>
+

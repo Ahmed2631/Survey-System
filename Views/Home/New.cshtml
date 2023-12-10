@@ -1,0 +1,29 @@
+﻿@model Tb1Kbi
+@section AddNewItem{
+    <link rel="stylesheet" href="~/Css/new.css">
+}
+
+    <div>
+    <form class="forms-sample" method="post" enctype="multipart/form-data"
+          asp-controller="Home" asp-action="Save" role="form">
+
+          <input type="hidden" asp-for="DepNo" />
+          <input type="hidden" asp-for="Kpidnum" />
+          <input type="hidden" asp-for="MeasurementUnit" />
+
+          
+
+            <label>Indicator Description</label>
+            <input type="text" id="fname" asp-for="Kpidescription" placeholder="Enter Description">
+            <span asp-validation-for="Kpidescription"></span>
+
+            <label>Target Value</label>
+            <input type="number" maxlength="3" max="100" id="lname" asp-for="TargetedValue" placeholder="Enter The Value">
+            <span asp-validation-for="TargetedValue"></span>
+
+        <button type="submit" formmethod="post" style="width:100%;background-color:#4CAF50;color:white;padding:14px 20px;margin: 8px 0;border: none;border-radius: 4px;cursor: pointer;">
+            Save
+        </button>
+        </form>
+    </div>
+

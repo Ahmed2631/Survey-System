@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "k9iDf3Dhyv5LUK6xIZAgbedxGGROVPbzkYwUu3Gsefw=",
+  "Source": "Survey System",
+  "BasePath": "_content/Survey System",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Survey System\\wwwroot",
+      "Source": "Survey System",
+      "ContentRoot": "C:\\Users\\20106\\Desktop\\Interview\\C# Practice\\Portfolio\\technical task\\Survey System\\wwwroot\\",
+      "BasePath": "_content/Survey System",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\20106\\Desktop\\Interview\\C# Practice\\Portfolio\\technical task\\Survey System\\wwwroot\\Css\\new.css",
+      "SourceId": "Survey System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\20106\\Desktop\\Interview\\C# Practice\\Portfolio\\technical task\\Survey System\\wwwroot\\",
+      "BasePath": "_content/Survey System",
+      "RelativePath": "Css/new.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Css\\new.css"
+    },
+    {
+      "Identity": "C:\\Users\\20106\\Desktop\\Interview\\C# Practice\\Portfolio\\technical task\\Survey System\\wwwroot\\Css\\style.css",
+      "SourceId": "Survey System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\20106\\Desktop\\Interview\\C# Practice\\Portfolio\\technical task\\Survey System\\wwwroot\\",
+      "BasePath": "_content/Survey System",
+      "RelativePath": "Css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Css\\style.css"
+    }
+  ]
+}
